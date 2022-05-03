@@ -23,7 +23,7 @@ def getWebData():
     """
     conn = http.client.HTTPConnection("data.pr4e.org", 80)
     conn.request("GET", "/intro-short.txt")
-    r1 = conn.getresponse()
-    dict = r1.getheaders()
-    print (dict)
+    reply1 = conn.getresponse()
+    header_dict = reply1.getheaders()
+    print ("'Why should I learn to write programs' in", (header_dict))
 getWebData()
