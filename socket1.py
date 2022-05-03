@@ -25,5 +25,5 @@ def getWebData():
     conn.request("GET", "/intro-short.txt")
     reply1 = conn.getresponse()
     header_dict = reply1.getheaders()
-    print ("'Why should you learn to write programs' in", (header_dict))
+    print ('Why should you learn to write programs?')
 getWebData()
